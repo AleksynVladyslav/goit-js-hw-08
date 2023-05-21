@@ -29,22 +29,5 @@
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
-  "customDistStructure": {
-    "config": {
-      ".js": "js",
-      "images": [
-        ".jpg",
-        ".png"
-      ],
-      ".fileExtension": "folder/in/dist",
-      "folder/in/dist": [
-        ".file",
-        ".extensions"
-      ]
-    },
-    "options": {
-      "development": true
-    }
-  },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
