@@ -26,9 +26,10 @@ function populateForm() {
 populateForm();
 
 function onFormSubmit(event) {
-  event.preventDefault()
-console.log(`email: ${refs.emailRef.value}, message: ${refs.messageRef.value}`)
+  event.preventDefault();
+  console.log(
+    `email: ${refs.emailRef.value}, message: ${refs.messageRef.value}`
+  );
   localStorage.removeItem(STORAGE_DATA_KEY);
-  event.currentTarget.reset()
-  
+  event.currentTarget.reset();
 }
