@@ -1,4 +1,4 @@
-// import throttle from 'lodash.throttle';
+import throttle from 'lodash.throttle';
 const STORAGE_DATA_KEY = 'feedback-form-state';
 
 const formRef = document.querySelector('.feedback-form');
@@ -6,7 +6,7 @@ const formRef = document.querySelector('.feedback-form');
 const { email, message } = formRef.elements;
 
 let dataForm = {};
-formRef.addEventListener('input', onInputsData);
+formRef.addEventListener('input', throttle(onInputsData, 500));
 formRef.addEventListener('submit', onFormSubmit);
 
 function onInputsData(event) {
