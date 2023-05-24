@@ -15,8 +15,8 @@ function onInputsData(event) {
 }
 
 function populateForm() {
-  const savedData = JSON.parse(localStorage.getItem(STORAGE_DATA_KEY));
-  if (savedData) {
+  dataForm = JSON.parse(localStorage.getItem(STORAGE_DATA_KEY));
+  if (dataForm) {
     email.value = dataForm.email || ' ';
     message.value = dataForm.message || ' ';
   }
